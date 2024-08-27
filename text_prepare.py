@@ -27,10 +27,15 @@ def clean_pd_data(pd_data, column_name):
     pd_size = len( pd_data[column_name] )
     print('data size ', pd_size)
     for index in range(pd_size):
-        pd_data[column_name][index] = clean_text(pd_data[column_name][index])
+        try:
+            pd_data[column_name][index] = clean_text(pd_data[column_name][index])
+        except:
+            print('index = ', index)
+            print('data = ', pd_data[column_name][index])
+            print('id = ', pd_data['id'][index])
         if (index % 100)==0:
             prog = index/pd_size*100
-            print(f"{prog:.2f}", end=" \r")
+            print(f"\r{prog:.2f} ", end="")
     return pd_data
 
 def tokenize_and_encode(tokenizer, comments, labels, max_length=128):
