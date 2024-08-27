@@ -21,11 +21,7 @@ import text_prepare
 
 df_train = text_load.LoadData(source=sources_local[0])
 print('clearing train')
-df_train = text_prepare.clean_pd_data(df_train, 'comment_text')
-
-print(df_train['comment_text'][0])
-print(df_train['comment_text'][10])
-
+# df_train = text_prepare.clean_pd_data(df_train, 'comment_text')
 
 df_test = text_load.LoadData(source=sources_local[1])
 print('clearing test')
