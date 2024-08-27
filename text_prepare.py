@@ -43,7 +43,7 @@ def clean_pd_data(pd_data, column_name):
     if len(error_idx)>0:
         print('removing data with errors in DataFrame:')
         while len(error_idx)>0:
-            pd_data.drop(index = error_idx[len(error_idx)])
+            pd_data.drop(index = error_idx[len(error_idx)-1])
             error_idx.pop()
     return pd_data
 
