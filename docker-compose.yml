@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: streamlit_app
+    ports:
+      - "8501:8501"
+    # Оставляем закомментированными volumes во время первой сборки
+    # volumes:
+    #   - ./saved_model:/usr/src/app/saved_model
+    #   - ./main.py:/usr/src/app/main.py
+    networks:
+      - app_network
+
+networks:
+  app_network:
+
+
+
+
+
