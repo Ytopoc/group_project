@@ -13,6 +13,7 @@
   <li><b>docker run -it -p 8501:8501 app</b></li>
   <li>перейди за цим посиланням:http://localhost:8501</li>
 </ol>
+
 # docker-compose
 <b>docker_compose up</b>
 
