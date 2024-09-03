@@ -15,7 +15,7 @@
 </ol>
 
 # docker-compose
-<b>docker_compose up</b>
+<b>docker_compose up -d</b>
 
 # Посилання на модель в гугл диску
 https://drive.google.com/drive/u/1/folders/1hYDO3Dn8jJPnpkKtfkzG7Vb1RiAe8GKF
