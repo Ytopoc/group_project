@@ -1,3 +1,5 @@
+[**English**](README.md) | [Українська](README.uk.md)
+
 # Toxic Comments Classifier
 
 A Streamlit web app that classifies user-submitted comments into six categories of toxicity using a fine-tuned BERT model. The model is trained on the Jigsaw Toxic Comment dataset (multi-label).
