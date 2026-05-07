@@ -16,7 +16,7 @@ Categories: `toxic`, `severe_toxic`, `obscene`, `threat`, `insult`, `identity_ha
 |------|---------|
 | `core.ipynb` | End-to-end training notebook (preprocessing, training, evaluation) |
 | `download_models.py` | Downloads pre-trained model weights from Google Drive |
-| `main.py` | Streamlit app — loads the model and classifies user input |
+| `main.py` | Streamlit app - loads the model and classifies user input |
 | `Dockerfile` | Container image for the app |
 | `docker-compose.yml` | Single-service compose file |
 
